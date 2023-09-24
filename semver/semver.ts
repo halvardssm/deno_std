@@ -203,4 +203,8 @@ export class SemVer {
     if (!parsedVersion) return undefined;
     return new SemVer(parsedVersion);
   }
+
+  toString(): string {
+    return this.format();
+  }
 }

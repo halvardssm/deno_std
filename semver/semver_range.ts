@@ -64,4 +64,8 @@ export class SemVerRange {
     if (!parsedRange) return undefined;
     return new SemVerRange(parsedRange as SemVerRange);
   }
+
+  toString(): string {
+    return this.format();
+  }
 }

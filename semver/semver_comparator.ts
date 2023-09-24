@@ -72,4 +72,8 @@ export class SemVerComparator {
     if (!parsedComparator) return undefined;
     return new SemVerComparator(parsedComparator);
   }
+
+  toString(): string {
+    return this.format();
+  }
 }
